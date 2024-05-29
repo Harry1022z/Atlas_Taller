@@ -348,3 +348,7 @@ footer{
 .social-icon i {
     vertical-align: middle;
 }
+
+.boton_moverse {
+    translate: 2rem -10rem;
+}
