@@ -1,12 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
 body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.header {
-    background-image: url(/assets/banner-bk.jpg);
-    background-size: cover;
-    height: 900px;
+#header {
+    background-image: url('/assets/banner-bk.jpg');
+    background-repeat: no-repeat;
     color: white;
     display: flex;
     flex-direction: column;
@@ -40,11 +44,27 @@ body {
 }
 
 .texto_del_header p {
-    font-size: 20x;
+    font-size: 20px;
 }
+
+.part {
+    position: relative;
+    bottom: 190px;
+    left: 30px;
+}
+
 .titulobajo {
-    font-size: 45px;
+    font-size: 35px;
+    left: 30px;
+    position: relative;
+    bottom: 160px;
+}
+
+.titulobajo2 {
+    font-size: 35px;
     margin-left: -30px;
+    position: relative;
+    bottom: 25px;
 }
 
 .textoarriba {
@@ -62,6 +82,13 @@ button {
     border: none;
     cursor: pointer;
     margin-top: 20px;
+}
+
+.botonp{
+    background: #00ffa6;
+    margin-bottom: 20px;
+    color: #1f2937;
+    margin-bottom: 190px;
 }
 
 .contenedor {
@@ -92,11 +119,6 @@ button {
     height: auto;
 }
 
-.back {
-    background-color: #00ffa6;
-    padding: 40px 0;
-}
-
 .contenedor_2 {
     display: flex;
     flex-wrap: wrap;
@@ -105,12 +127,133 @@ button {
     padding: 20px 5%;
     text-align: left;
     margin-left: -40px;
+    background-color: #00ffa6;
+    padding: 40px 0;
 }
 
 .contenedor_2 div {
     flex: 1 1 300px;
     padding: 20px;
     box-sizing: border-box;
+}
+
+.contenedor_1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 5%;
+    text-align: left;
+    margin-left: -40px;
+    background: linear-gradient(168deg, #ffff 50%, #00ffa6 50%);
+}
+
+.contenedor_1 div {
+    flex: 1 1 300px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.tarjetas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.tarjetas div{
+    padding: 30px 50px 30px  50px;
+}
+
+.tarjetas button{
+    background: transparent;
+    color: #1f2937;
+    border: 2px solid #1f2937;
+}
+
+#plan p{
+    align-content: center;
+    text-align: center;
+}
+
+#plan .numero{
+    font-size: 400%;
+}
+
+.tarjeta_2{
+    background: #1f2937;
+    color: #ffff;
+}
+
+.tarjeta_2 button{
+    background: #00ffa6;
+    color: #1f2937;
+}
+
+.clientes{
+    display: flex;
+    justify-content: space-between;
+    padding: 4%;
+    background: #dadada;
+}
+
+.contacto{
+    background-image: url('/assets/contact-bk.jpg');
+    background-size: cover;
+    color: white;
+    display: flex;
+    justify-content:space-between;
+    padding: 15%;
+}
+
+.formulario{
+    color: #00ffa6;
+    width: 50%;
+}
+
+.titulito {
+    font-size: 200%;
+}
+
+.formulario div div input {
+    background: transparent;
+    border: 2px solid #00ffa6;
+    border-radius: 5px;
+    color: white;
+    width: 240px;
+    height: 30px;
+}
+
+.formulario .mesanje input {
+    width: 315%;
+    height: 100px;
+}
+
+.fila_1,
+.fila_2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.fila_3 button{
+    background: #00ffa6;
+    color: #1f2937;
+    width: 100%;
+}
+
+.texto_footer {
+    translate: 100px 5px;
+}
+
+footer{
+    background: #1f2937;
+    display: flex;
+    flex-wrap: wrap;
+    color: #ffff;
+    align-items: center;
+    padding: 2%;
 }
 
 @media (max-width: 768px) {
@@ -166,7 +309,42 @@ button {
         font-size: 72px;
     }
 
-    .contenedor h1 {
-        font-size: 56px;
+    .contenedor {
+        height: 100vh;
     }
+
+    .contenedor {
+        height: 100vh;
+    }
+}
+
+.social-icons { 
+    translate: 0px 3400px;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    gap: 15px;
+}
+
+.social-icon {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    background-color: white;
+    color: black;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 20px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.social-icon:hover {
+    background-color: #00ffa6;
+    color: white;
+}
+
+.social-icon i {
+    vertical-align: middle;
 }
